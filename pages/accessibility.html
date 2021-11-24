@@ -14,21 +14,27 @@
     <main>
         <section>
             <h1>Accessibility</h1>
-                <h2>Visual impairment</h2>
-                    <ul>
-                        <li>Font choice</li>
-                        <li>Font size/weight</li>
-                        <li>Line height</li>
-                        <li>Colour contrast</li>
-                        <li>Visual cues</li>
-                    </ul>
-                    <p>Etiam quis justo nec tortor volutpat maximus id ut mi. In ac luctus turpis. Integer nec tellus sit amet nibh tincidunt dignissim a eu diam. Curabitur nec ornare purus, non luctus lectus. Vivamus pellentesque aliquet risus, eget eleifend augue egestas vitae. Vivamus egestas magna risus, eu imperdiet magna convallis sit amet. Praesent tellus est, pellentesque id nisl vel, tristique tincidunt purus. Mauris vitae urna in felis laoreet pharetra sed nec nisi. Quisque nec sem ac sem hendrerit ullamcorper. Morbi vehicula tortor turpis, sit amet bibendum ex accumsan non. In pretium dictum odio, eu imperdiet diam venenatis non. Vivamus et sapien elementum ligula dictum consectetur quis nec nisi. Sed molestie odio vitae elit imperdiet, sed dictum eros malesuada. Pellentesque ultrices imperdiet metus, sit amet ullamcorper augue.</p>
-                <h2>Physical impairment</h2>
-                    <ul>
-                        <li>Keyboard access</li>
-                    </ul>
-                    <p>Donec hendrerit et velit in facilisis. Nulla sed metus ut augue malesuada fringilla. Pellentesque pretium eget nunc a varius. Nulla eget convallis arcu. Integer eget eleifend erat. Quisque vulputate euismod ex, convallis finibus elit rhoncus cursus. Morbi et laoreet neque, et laoreet mi. Aliquam malesuada mi leo, eget tristique dolor suscipit vitae. Praesent lacinia ligula imperdiet risus feugiat finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi gravida nunc non nisi vehicula tincidunt. Suspendisse quis urna imperdiet, ultrices est et, accumsan mi. Aliquam scelerisque, est pellentesque lacinia tincidunt, erat nisl vulputate elit, id porttitor libero erat et ligula. Vivamus porta enim et ullamcorper viverra. Morbi aliquam porttitor turpis ac sagittis. Fusce auctor massa eget felis dapibus, a dignissim elit rhoncus.</p>
-            <a href="../index.html">Back to home</a>
+                <p>Right from the start of the design and development process for this website, we thought carefully about how our design choices will affect users with visual impairments or limited motor function. We made decisions about the layout, colour scheme, text design and navigation of the website, and then tested the website using an automated accessibility checker to ensure that are design goals were met.</p>
+                <h2>Colours</h2>
+                    <p>Our colour scheme features black and dark blue text on a light background for the main text and headings, with the colours reversed for internal links. Visual interest is added with a gradient colour background, which doesn’t interfere with the legibility of the text. All colour combinations were tested using <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a> to ensure that we met the WCAG Level AAA minimum recommended contrast ratio of 7:1.</p>       
+                    <img id="contrast" src="../images/contrast-checker.jpg" alt="Screenshot showing the result of a colour contrast check">             
+                <h2>Fonts</h2>
+                    <p>We use a single font throughout the website, for both headings and body text. Quicksand is a clean, easy-to-read sans serif text with good spacing between letters; we increased the line height to 1.5 to make the text even easier to read. All font sizes are specified in rem to make the text responsive to different screen sizing; body text is set to 1.8rem – which equals 18pt based on the html font size setting.</p>
+                <h2>Links</h2>
+                    <p>We have used different styling on internal and external links to distinguish them from each other and have been careful not to rely on colour alone to indicate purpose. Internal links are styled to look like buttons; in their hover or focus states the colour scheme is reversed, and a double chevron appears as an additional visual cue to the purpose of the link.</p>
+                    <div id="nav-img">
+                        <img id="nav_before" src="../images/nav_before.jpg" alt="Navigation link in normal state">
+                        <img id="nav_after" src="../images/nav_after.jpg" alt="Navigation link in hover or focus state">
+                        <figcaption>Navigation link, in normal state (left) and hover/focus state (right)</figcaption>
+                    </div>
+                    <p> External links are dark blue (compared to black body text) and in their hover or focus states they become underlined with a contrasting colour background.</p>
+                <h2>Alt text</h2>
+                    <p>All images carry a descriptive alt text for the partially sighted.</p>
+                <h2>Layout</h2>
+                    <p>The homepage has a simple layout with four links to take users to the other pages on the website. It’s possible to navigate the pages using just the tab and arrow keys; there are no 'traps' in which a user navigating with a keyboard can get stuck.</p>  
+                <h2>Testing</h2>
+                    <p>Once the website was finished and published on GitHub Pages, we ran the HTML and CSS code for the entire site through the <a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool.</a></p>
+            <a class="nav" href="../index.html">Back to home</a>
         </section>
     </main>
 </body>
