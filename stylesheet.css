@@ -132,6 +132,7 @@ p > a:active {
     color: white;
     padding: 1rem;
     margin: 1rem;
+    align-items: baseline;
     text-decoration: none;
   }
 
