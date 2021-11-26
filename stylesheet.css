@@ -69,8 +69,7 @@ h2 {
     font-size: 2.4rem;
     color: #0C4D63;
 }
-
-h3 {
+section > h3 {
     font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
     color: #0C4D63;
