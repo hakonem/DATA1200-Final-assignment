@@ -149,8 +149,57 @@ p > a:active {
 #main-picture {
     display: none;
 }
-
-
+/*Fun page*/
+#funpage{
+    background-image: url(images/ddg1.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.funcontainer{
+    max-width: 800px;
+    margin: 2rem 2rem 0;
+    padding: 2rem;
+    background-color: rgba(245, 245, 245, 0.774);
+    border-radius: 7px;
+}
+#funpage h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0%;
+    font-size: 4rem;
+    padding-top: 2rem;
+  
+}
+#funpage h2, h3, h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+#funpage p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.funimage1, .funimage2, .funimage3{
+    max-width: 100%;
+    margin: 0px;
+    border-radius: 10px;
+}
+#funfooter{
+    font-size: 4rem;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    height: 50px;
+}
+#funfooter > a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(245, 245, 245, 0.685);
+    text-decoration: none;
+}
+#funfooter > a:hover{
+    color: white;
+}
 
 /*Screens 600px – 960 px*/
 @media only screen and (min-width: 600px) {
@@ -189,6 +238,23 @@ p > a:active {
         display: inline;
         max-width: 30vw;
     }
+    .funcontainer{
+        margin: 2rem auto;
+    }
+    .funimage2{
+        max-width: 70%;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        border-radius: 5px;
+        float: left;
+    }
+    .funimage3{
+        max-width: 70%;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        border-radius: 5px;
+        float: right;
+    }
 }
 
 /*Screens over 960 px*/
@@ -208,10 +274,4 @@ p > a:active {
         margin: 0 auto;
     }
 
-
 }
-  
-  
-  
-  
-  
