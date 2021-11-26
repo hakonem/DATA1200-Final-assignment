@@ -14,6 +14,7 @@ body {
 main {
     background-image: linear-gradient(243.4deg,  #00d7ce 13%, #0084ff 98%);
     margin: 0;
+    height: fit-content;
 }
 
 section {
@@ -21,6 +22,7 @@ section {
     margin: 0 auto;
     background-color: whitesmoke;
     padding: 4rem;
+    overflow: auto;
 }
 
 #header {
@@ -182,6 +184,15 @@ p > a:active {
     #nav_after {
         display: inline;
         max-width: 30vw;
+    }
+
+    #link-alert {
+        display: block;
+        max-width: 35%;
+        height: auto;
+        float: left;
+        margin-left: -2rem;
+        margin-right: 3rem;
     }
 }
 
